@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://pastafari.github.com/blog/2012/05/03/on-deliberate-practice/</loc>
+        <lastmod>2012-06-28T22:32:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://pastafari.github.com/blog/2012/05/08/ten-commandments-from-bertrand-russell/
+        </loc>
+        <lastmod>2012-06-28T22:32:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://pastafari.github.com/blog/2012/05/17/the-shapes-of-numbers/</loc>
+        <lastmod>2012-06-28T22:32:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://pastafari.github.com/blog/2012/06/03/experiences-with-vagrant-and-puppet/
+        </loc>
+        <lastmod>2012-06-28T22:32:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://pastafari.github.com/blog/archives/</loc>
+        <lastmod>2012-06-28T22:32:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://pastafari.github.com/</loc>
+        <lastmod>2012-06-28T22:32:17+05:30</lastmod>
+    </url>
+</urlset>

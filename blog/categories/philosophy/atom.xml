@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: philosophy | Notes to self]]></title>
+  <link href="http://pastafari.github.com/blog/categories/philosophy/atom.xml" rel="self"/>
+  <link href="http://pastafari.github.com/"/>
+  <updated>2012-06-28T22:41:37+05:30</updated>
+  <id>http://pastafari.github.com/</id>
+  <author>
+    <name><![CDATA[Mohit Thatte]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ten Commandments from Bertrand Russell]]></title>
+    <link href="http://pastafari.github.com/blog/2012/05/08/ten-commandments-from-bertrand-russell/"/>
+    <updated>2012-05-08T12:29:00+05:30</updated>
+    <id>http://pastafari.github.com/blog/2012/05/08/ten-commandments-from-bertrand-russell</id>
+    <content type="html"><![CDATA[<p>I stumbled upon an
+<a href="http://www.brainpickings.org/index.php/2012/05/02/a-liberal-decalogue-bertrand-russell/">interesting article</a>
+about Bertrand Russell's philosophy. Here is a 'Note to self' that is
+probably going to be one of the foundations of my lifes philosophy!</p>
+
+<blockquote><p>Perhaps the essence of the Liberal outlook could be summed up in a new decalogue, not intended to replace the old one but only to supplement it. The Ten Commandments that, as a teacher, I should wish to promulgate, might be set forth as follows:</p>
+
+<ol>
+<li><strong>Do not feel absolutely certain of anything.</strong></li>
+<li><strong>Do not think it worth while to proceed by concealing evidence, for the evidence is sure to come to light.</strong></li>
+<li><strong>Never try to discourage thinking for you are sure to succeed.</strong></li>
+<li><strong>When you meet with opposition, even if it should be from your husband or your children, endeavor to overcome it by argument and not by authority, for a victory dependent upon authority is unreal and illusory.</strong></li>
+<li><strong>Have no respect for the authority of others, for there are always contrary authorities to be found.</strong></li>
+<li><strong>Do not use power to suppress opinions you think pernicious, for if you do the opinions will suppress you.</strong></li>
+<li><strong>Do not fear to be eccentric in opinion, for every opinion now accepted was once eccentric.</strong></li>
+<li><strong>Find more pleasure in intelligent dissent than in passive agreement, for, if you value intelligence as you should, the former implies a deeper agreement than the latter.</strong></li>
+<li><strong>Be scrupulously truthful, even if the truth is inconvenient, for it is more inconvenient when you try to conceal it.</strong></li>
+<li><strong>Do not feel envious of the happiness of those who live in a fool’s paradise, for only a fool will think that it is happiness.</strong></li>
+</ol>
+</blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[On deliberate practice]]></title>
+    <link href="http://pastafari.github.com/blog/2012/05/03/on-deliberate-practice/"/>
+    <updated>2012-05-03T11:45:00+05:30</updated>
+    <id>http://pastafari.github.com/blog/2012/05/03/on-deliberate-practice</id>
+    <content type="html"><![CDATA[<p>One of my life goals is to be an excellent programmer. I believe Peter
+Norvig when <a href="http://norvig.com/21-days.html">he says</a> that it takes a
+lot of time (10 years?) and effort to get there!</p>
+
+<p>In order to achieve a mastery over the craft (and computer programming is
+definitely a craft!) it is important to continuously grow and improve.</p>
+
+<p>The million-dollar question is HOW? How do I go from here to there?</p>
+
+<p>I am going to start with the beginner's mind approach. What if I knew
+nothing about computer programming and had to start from scratch? What
+would I do? I have been reading about
+<a href="http://calnewport.com/blog/2010/01/06/the-grandmaster-in-the-corner-office-what-the-study-of-chess-experts-teaches-us-about-building-a-remarkable-life/">deliberate practice</a>
+and I'm convinced that it is the only way to go from here to there.</p>
+
+<p>Deliberate practice can be briefly summarized as below (excerpt from
+<a href="http://calnewport.com/blog/2010/01/06/the-grandmaster-in-the-corner-office-what-the-study-of-chess-experts-teaches-us-about-building-a-remarkable-life/">Cal Newport's blog</a>):</p>
+
+<blockquote><ol>
+<li><strong>It’s designed to improve performance.</strong> “The essence of deliberate practice is continually stretching an individual just beyond his or her current abilities. That may sound obvious, but most of us don’t do it in the activities we think of as practice.”</li>
+<li><strong>It’s repeated a lot.</strong> “High repetition is the most important difference between deliberate practice of a task and performing the task for real, when it counts.”</li>
+<li><strong>Feedback on results is continuously available.</strong> “You may think that your rehearsal of a job interview was flawless, but your opinion isn’t what counts.”</li>
+<li><strong>It’s highly demanding mentally.</strong> “Deliberate practice is above all an effort of focus and concentration. That is what makes it ‘deliberate,’ as distinct from the mindless playing of scales or hitting of tennis balls that most people engage in.”</li>
+<li><strong>It’s hard.</strong> “Doing things we know how to do well is enjoyable, and that’s exactly the opposite of what deliberate practice demands.”</li>
+<li><strong>It requires <em>(good)</em> goals.</strong> “The best performers set goals that are not about the outcome but rather about the process of reaching the outcome.”</li>
+</ol>
+</blockquote>
+
+<p>So, I must identify deliberate practice activities that I perform on a
+regular basis, get feedback and get on a path.</p>
+
+<p>The really hard question is determining good goals. This is where a
+mentor can play a part.</p>
+
+<p>My next post will be about what specific goals I have set up for
+myself in the days to come and how I intend to apply the principles of
+deliberate practice to get from here to there!</p>
+]]></content>
+  </entry>
+  
+</feed>

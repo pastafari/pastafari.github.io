@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Thoughtworks | Notes to self]]></title>
+  <link href="http://pastafari.github.com/blog/categories/thoughtworks/atom.xml" rel="self"/>
+  <link href="http://pastafari.github.com/"/>
+  <updated>2012-06-28T22:41:37+05:30</updated>
+  <id>http://pastafari.github.com/</id>
+  <author>
+    <name><![CDATA[Mohit Thatte]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Our experience with Vagrant and Puppet]]></title>
+    <link href="http://pastafari.github.com/blog/2012/06/03/experiences-with-vagrant-and-puppet/"/>
+    <updated>2012-06-03T18:14:00+05:30</updated>
+    <id>http://pastafari.github.com/blog/2012/06/03/experiences-with-vagrant-and-puppet</id>
+    <content type="html"><![CDATA[<p>On my current project, after a bit of prodding by <a href="http://twitter.com/sunitparekh">Sunit</a> we decided to experiment with using a virtual
+machine setup managed through <a href="http://vagrantup.com">Vagrant</a> and <a href="http://virtualbox.org">Virtual Box</a> for our development
+environment.</p>
+
+<p>In this post I will try and outline the pros and cons and
+lessons learnt over the past week while pairing with
+<a href="http://twitter.com/vginette">Ginette</a> and setting up our own VM
+managed with Vagrant.</p>
+
+<h2>Why Vagrant?</h2>
+
+<p>Our project uses Rails with Postgres and Nginx/Passenger. We also use RVM to manage Ruby versions.</p>
+
+<p>The reasons to use Vagrant were primarily these:</p>
+
+<ul>
+<li>Use <strong><em>one VM per project</em></strong> without cluttering your main machine with the sundry dependencies (MySQL, Postgres, Redis,
+Apache, Nginx, Passenger, et al) that projects invariably have.</li>
+<li>Have a <strong><em>5 minute setup</em></strong> for any new developer who joins our team to
+get up and running. This should be as easy as running a single
+command: <code>vagrant up</code>. No installation, no troubleshooting. It
+should <em>"just work"</em> &#8482;</li>
+<li>Have a <strong><em>consistent</em></strong> environment across all developers machines.</li>
+<li>Have a simple command line based workflow: <code>vagrant up</code>, <code>vagrant ssh</code>,
+<code>vagrant halt</code></li>
+<li>Create <strong><em>reusable</em></strong> configuration scripts using Puppet that could be used on Test/Staging and Production environments as well. <strong><em>(Ambitious)</em></strong></li>
+</ul>
+
+
+<h2>TL;DR version</h2>
+
+<h4>Advantages</h4>
+
+<ul>
+<li><code>vagrant up</code> <em>"just works"</em> &#8482; ! Excellent for hiding details and
+letting people focus on GTD. This also improves productivity by
+avoiding "it doesn't work on my machine" delays! Because everything
+<em>"just works"</em> &#8482; on the VM.</li>
+<li>Setting up a  <a href="http://vagrantup.com/v1/docs/base_boxes.html">Vagrant base box</a>
+is not hard. If you setup a minimal base box with a operating system
+(sans GUI) and SSH, you can reuse it on every project and do the provisioning through Puppet/Chef.</li>
+<li>We recommend using a <a href="http://vagrantbox.es">pre-existing base box</a>, installing dependencies
+with a package manager (apt-get, etc.) and then hosting it somewhere
+on your local network for fellow devs to use as a pre-packaged VM.
+This is a quick and easy way to get setup.</li>
+</ul>
+
+
+<h4>Disadvantages</h4>
+
+<ul>
+<li>Our biggest roadblocks were with getting Puppet to do our bidding. We
+tried to reuse existing Puppet modules for installing dependencies.
+We managed to get RVM and Postgres installed through Puppet.
+But we just couldn't seem to get Nginx/Passenger to work.</li>
+<li>Puppet modules tended to be either poorly documented / not
+maintained or just did not work! Maybe we were doing something
+wrong, but it was really hard to tell!</li>
+<li>Base boxes for your choice of operating system might not be readily
+available! (This is not a major disadvantage as it is quite easy to
+create your own base box, but it is time consuming)</li>
+</ul>
+
+
+<h2>Background</h2>
+
+<p>We started by watching a short but informative
+<a href="http://crohr.me/presentations/vagrant-puppet/">presentation</a> by Cyril
+Rohr about using Vagrant with Puppet. It was enough to convince us to
+pursue the magical <code>vagrant up</code>!</p>
+
+<h2>How to setup Vagrant</h2>
+
+<p>Just follow these simple
+<a href="http://vagrantup.com/v1/docs/getting-started/index.html">getting started</a>
+instructions on the Vagrant site. You can try it out using the
+<code>lucid32</code> base box that the creators of Vagrant have provided. If the
+setup was easy enough, you should already be convinced that Vagrant is
+a useful tool ;-)</p>
+
+<h2>Customizing the VM for your project</h2>
+
+<p>Setting up Vagrant was easy. The more complicated part was
+setting up a Virtual machine for use on the project.</p>
+
+<p>There were two strategies that we thought of:</p>
+
+<ol>
+<li>Create a fully loaded base box with all the dependencies pre-installed. This base box can be hosted on a URL that can be
+shared with the team and added to the Vagrantfile as well. The first
+time someone does a <code>vagrant up</code>, the base box will be downloaded to
+their machine and stored locally.</li>
+<li>Create or reuse a minimal base box with only the OS and SSH
+installed. Provision the dependencies for your project through
+Puppet/Chef. Ideally reuse existing Puppet modules/Chef recipes.</li>
+</ol>
+
+
+<p>Option 1 is relatively easier and faster for these reasons.</p>
+
+<ul>
+<li>There are quite a few base boxes that people have already created and
+shared on the <a href="http://vagrantbox.es">Vagrant Boxes site</a>.</li>
+<li>It is straightforward to use a package manager (apt-get, et .al) to
+install whatever you need on the base box</li>
+<li>Once your installation is done, you can <em><strong>freeze</strong></em> it on the VM
+and no one else needs to do it. So less troubleshooting, etc. is likely.</li>
+</ul>
+
+
+<p>Option 2 was more interesting because we wanted to experiment with
+Puppet! So thats what we went with. Here is our experiences:</p>
+
+<ul>
+<li>Puppet uses the concept of Resource Abstraction Layer to abstract
+away OS level details for resources like: Files, Packages, Services,
+Users, Executables and so on.</li>
+<li>Puppet provides a language to specify configuration and one can
+maintain a "manifest" file with per-project requirements.</li>
+<li>Puppet modules are a way to reuse other people's code to avoid the
+nitty-gritty of setting things up. There is a PuppetLabs module
+repository as well as a number of modules available on Github.
+However, we were not too happy with the documentation and support
+for most modules that we used.</li>
+<li>We ended up using Puppet modules for RVM and Postgresql
+installation. In order to tell Puppet to install RVM, all we needed
+to do was: <code>include 'rvm'</code> in our Puppet manifest. The same was true
+for Postgresql.</li>
+<li>In conclusion, we realized that Puppet modules are nothing but
+collections of OS specific installation instructions for various
+packages and services. It is not too difficult to write your own
+module that delegates to the OS you are using. And that is probably
+a better way to go than rely on some obscure module that might not
+be properly tested/maintained.</li>
+</ul>
+
+
+<h2>Bottomline/Conclusion</h2>
+
+<p>Using Vagrant to manage VM's is a great idea.</p>
+
+<p>However, until I become a Puppet/Chef expert or I there is one on the team, I would go for a fully-loaded base
+box option it is less time consuming.</p>
+
+<p>Happy coding.</p>
+]]></content>
+  </entry>
+  
+</feed>
