@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My personal SICP quest"
+title: "My SICP quest"
 date: 2012-07-23 22:30
 comments: true
 categories: [sicp, programming]
