@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sicp | Notes to self]]></title>
   <link href="http://pastafari.github.com/blog/categories/sicp/atom.xml" rel="self"/>
   <link href="http://pastafari.github.com/"/>
-  <updated>2012-07-31T00:08:35+05:30</updated>
+  <updated>2012-07-31T00:13:09+05:30</updated>
   <id>http://pastafari.github.com/</id>
   <author>
     <name><![CDATA[Mohit Thatte]]></name>
@@ -38,7 +38,7 @@
 
 <p>The next section begins with the general idea of <code>language</code> itself:</p>
 
-<p><blockquote><p>... Every powerful language has three mechanisms for accomplishing this:</p></p><p><p><strong>primitive expressions -> which represent the simplest entities the language is concerned with.</strong><br/><strong>means of combination -> by which compound elements are made from simpler ones, and</strong><br/><strong>means of abstraction -> by which compound elements can be named and manipulated as units.</strong></p></p><p><p></p></blockquote></p>
+<p><blockquote><p>... Every powerful language has three mechanisms for accomplishing this:</p></p><p><p>primitive expressions -> which represent the simplest entities the language is concerned with.<br/>means of combination -> by which compound elements are made from simpler ones, and<br/>means of abstraction -> by which compound elements can be named and manipulated as units.</p></p><p><p></p></blockquote></p>
 
 <p>Last week, I read a bit about <a href="ftp://ftp.cs.ru.nl/pub/CompMath.Found/lambda.pdf">the lambda calculus *PDF</a> and realized that the above is in fact a translation into English of the formal definition for <code>lambda terms</code>! Very interesting to note that the document linked above states clearly that the two branches of programming languages - The Fortran derivatives and The Lisp derivatives are essentially manifestations of the <code>Turing Machine (Alan Turing)</code> and <code>the Lambda Calculus (Alonzo Church)</code> respectively. Math is awesome stuff indeed :)</p>
 
