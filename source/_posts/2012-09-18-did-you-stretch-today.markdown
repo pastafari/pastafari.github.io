@@ -14,9 +14,9 @@ Stretching regularly is easier said than done, because you might often get into 
 
 So, I have setup a simple reminder on my Mac that tells me to "Stand up and stretch" every 30 minutes. 
 
-I found it was super easy to set this up using AppleScript, and thought I'd share it with you.
+I found it was super easy to set this up using AppleScript, and thought I'd share it with the world.
 
-So, if you are a Mac user, open up the AppleScript editor (comes pre installed on Mac, just search with Cmd+Space) and paste this simple code snippet:
+So, if you are a Mac user, open up the AppleScript editor (comes pre installed on OS X, just search with Cmd+Space) and paste this simple code snippet:
 
 <script src="https://gist.github.com/3739127.js?file=stretch"></script>
 
