@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: work | Notes to self]]></title>
+  <link href="http://pastafari.github.com/blog/categories/work/atom.xml" rel="self"/>
+  <link href="http://pastafari.github.com/"/>
+  <updated>2012-09-18T00:44:39+05:30</updated>
+  <id>http://pastafari.github.com/</id>
+  <author>
+    <name><![CDATA[Mohit Thatte]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Did you stretch today?]]></title>
+    <link href="http://pastafari.github.com/blog/2012/09/18/did-you-stretch-today/"/>
+    <updated>2012-09-18T00:23:00+05:30</updated>
+    <id>http://pastafari.github.com/blog/2012/09/18/did-you-stretch-today</id>
+    <content type="html"><![CDATA[<p>If you have a desk job, you probably have come across ergonomic chairs and desks and what not.</p>
+
+<p>In my opinion, the simplest commandment to prevent injuries arising out of bad posture is "Stand up and stretch!"</p>
+
+<p>Stretching regularly is easier said than done, because you might often get into a <a href="http://en.wikipedia.org/wiki/Flow_(psychology">flow</a> state (which in itself is a very good thing!) for long periods and forget to do it.</p>
+
+<p>So, I have setup a simple reminder on my Mac that tells me to "Stand up and stretch" every 30 minutes.</p>
+
+<p>I found it was super easy to set this up using AppleScript, and thought I'd share it with you.</p>
+
+<p>So, if you are a Mac user, open up the AppleScript editor (comes pre installed on Mac, just search with Cmd+Space) and paste this simple code snippet:</p>
+
+<script src="https://gist.github.com/3739127.js?file=stretch"></script>
+
+
+<p>Run the script you just created and voila you have a reminder that will be spoken out loud every 30 minutes!</p>
+
+<p>Here's a <a href="http://www.ccohs.ca/oshanswers/ergonomics/office/stretching.html">nice set of stretches</a> from ze Canadians.</p>
+
+<p>There are many nifty things that AppleScript and Automator can help with on the Mac! Here's an awesome <a href="http://www.maclife.com/article/features/15_automator_and_applescripts_you_can%E2%80%99t_live_without">bag of tricks</a></p>
+
+<p>Enjoy!</p>
+
+<p>Disclaimer: It does disrupt 'flow' and can get irritating, but if you tweak the frequency of reminders, it is a good tradeoff.</p>
+]]></content>
+  </entry>
+  
+</feed>
