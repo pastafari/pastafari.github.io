@@ -4,7 +4,7 @@
   <title><![CDATA[Category: work | Notes to self]]></title>
   <link href="http://pastafari.github.com/blog/categories/work/atom.xml" rel="self"/>
   <link href="http://pastafari.github.com/"/>
-  <updated>2012-09-18T00:44:39+05:30</updated>
+  <updated>2013-01-09T00:43:47+05:30</updated>
   <id>http://pastafari.github.com/</id>
   <author>
     <name><![CDATA[Mohit Thatte]]></name>
@@ -26,9 +26,9 @@
 
 <p>So, I have setup a simple reminder on my Mac that tells me to "Stand up and stretch" every 30 minutes.</p>
 
-<p>I found it was super easy to set this up using AppleScript, and thought I'd share it with you.</p>
+<p>I found it was super easy to set this up using AppleScript, and thought I'd share it with the world.</p>
 
-<p>So, if you are a Mac user, open up the AppleScript editor (comes pre installed on Mac, just search with Cmd+Space) and paste this simple code snippet:</p>
+<p>So, if you are a Mac user, open up the AppleScript editor (comes pre installed on OS X, just search with Cmd+Space) and paste this simple code snippet:</p>
 
 <script src="https://gist.github.com/3739127.js?file=stretch"></script>
 

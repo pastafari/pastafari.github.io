@@ -4,7 +4,7 @@
   <title><![CDATA[Category: philosophy | Notes to self]]></title>
   <link href="http://pastafari.github.com/blog/categories/philosophy/atom.xml" rel="self"/>
   <link href="http://pastafari.github.com/"/>
-  <updated>2012-09-18T00:44:39+05:30</updated>
+  <updated>2013-01-09T00:43:47+05:30</updated>
   <id>http://pastafari.github.com/</id>
   <author>
     <name><![CDATA[Mohit Thatte]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Object Oriented QOTD]]></title>
+    <link href="http://pastafari.github.com/blog/2013/01/09/qotd-alan-kay/"/>
+    <updated>2013-01-09T00:00:00+05:30</updated>
+    <id>http://pastafari.github.com/blog/2013/01/09/qotd-alan-kay</id>
+    <content type="html"><![CDATA[<p>Alan Kay on Object orientation in
+<a href="http://worrydream.com/EarlyHistoryOfSmalltalk/">Early History of Smalltalk</a></p>
+
+<p><blockquote><p>Smalltalk's design and existence is due to the insight that everything we can describe can be represented by the recursive composition of a single kind of behavioral building block that hides its combination of state and process inside itself and can be dealt with only through the exchange of messages. Philosophically, Smalltalk's objects have much in common with the monads of Leibniz and the notions of 20th century physics and biology.</p></p><p><p><strong>Its way of making objects is quite Platonic in that some of them act as idealizations of concepts - Ideas from which manifestations can be created.<br/>That the Ideas are themselves manifestations (of the Idea-Idea) and that the Idea-Idea is a-kind-of Manifestation-Idea which is a-kind-of itself,</strong><br/>so that the system is completely self-describing would have been appreciated by Plato as an extremely practical joke [Plato]</p></blockquote></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ten Commandments from Bertrand Russell]]></title>
